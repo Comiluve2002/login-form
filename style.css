@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(0, 100%, 74%) ;
+    background-image: url("images/bg-intro-desktop.png");
+    font-size: 16px;
+}
+
+h1{
+    margin: none;
+    font-family: 'Poppins';
+    font-weight: 700;
+    width: 85%;
+    font-size: 32px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width: 65%;
+    margin: 50px auto;
+}
+.intro{
+    margin: auto;
+    color: #fff;    
+}
+.intro p{ 
+    padding: 10px 0;
+    line-height: 1.3;
+}
+.free-trial{
+    width: 400px;
+    height: 32px;
+    background-color: hsl(248, 32%, 49%);
+    padding-top: 15px;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 0 #e46c70;
+}
+.try{
+  font-weight: bold;  
+}
+.form{
+    width: 400px;
+    height: 500px;
+    justify-content: center;
+}
+.form-input{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 4px 0px #e46c70;
+}
+.form-input p{
+      font-size: 12px;
+      text-align: center;
+}
+input{
+    height: 30px;
+    width: 330px;
+    border: 1.5px rgb(229, 226, 226) solid;
+    padding: 5px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+::placeholder{
+   font-size: 12px;
+   font-weight: bold;
+   padding-left: 15px;
+}
+.button{
+    background-color: green;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: 345px;
+    height: 40px;
+    margin: 15px 0;
+    border-radius: 5px;
+    opacity: 0.65;
+    box-shadow: 0 4px 0 rgb(2, 107, 2);
+}
+.terms{
+    color: Red;
+    font-weight: bold;
+    font-size: 12px;
+}
+form  .icon:active{
+        background-image: url("images/icon-error.svg");
+        background-repeat: no-repeat;
+        background-position:  300px;
+        background-size: 18px; 
+}
+
+@media screen and (max-width: 375px){
+    body{
+        background-color: hsl(0, 100%, 74%) ;
+        background-image: url("images/bg-intro-mobile.png");
+    }
+    .container{
+        display: block;
+        justify-content: center;
+        position: relative;
+    }
+    .form{
+        width: 300px;
+        height: 500px;
+        position: absolute;
+        left: -35px;
+    }
+   
+    input{
+        height: 30px;
+        width: 230px;
+    }
+    .intro{
+        margin-bottom: 40px;
+        text-align: center;
+        
+    }
+    .free-trial{
+        width: 300px;
+        height: 32px;
+        padding: 15px 0 30px;
+        font-size: 15px;
+    }
+    .free-trial p{
+        width: 50%;
+        margin: auto;
+        line-height: 1.5;
+    }
+    .button{
+        width: 245px;
+        height: 40px;
+        margin: 15px 0;
+       
+    }
+}
